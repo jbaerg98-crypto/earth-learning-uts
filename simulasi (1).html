@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#42b8e8">
+  <title>Simulasi | EARTH LEARNING</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">🌍 EARTH <span>LEARNING</span></a>
+
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="materi.html">Materi</a>
+      <a href="simulasi.html" class="active">Simulasi</a>
+      <a href="eksplorasi.html">Eksplorasi</a>
+      <a href="kuis.html">Kuis</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <span class="hero-label">🔬 LABORATORIUM VIRTUAL</span>
+      <h1>Ayo Bereksperimen!</h1>
+      <p>
+        Ubah konsentrasi gas rumah kaca dan amati
+        bagaimana proses pemanasan bumi bekerja.
+      </p>
+      <div class="page-emoji">☀️ 🌍 🌡️</div>
+    </section>
+
+    <section class="simulation-section">
+
+      <div class="section-heading">
+        <span class="section-label">SIMULASI 01</span>
+        <h2>Bagaimana Efek Rumah Kaca Bekerja?</h2>
+        <p>
+          Atur tingkat gas rumah kaca untuk melihat
+          perubahan pada simulasi atmosfer.
+        </p>
+      </div>
+
+      <div class="simulation-layout">
+
+        <!-- VISUALISASI BUMI -->
+        <div class="sim-visual">
+          <div class="sim-status">
+            <span class="status-dot"></span>
+            SIMULASI AKTIF
+          </div>
+
+          <div class="atmosphere" id="atmosphere">
+            <div class="sun-object">☀️</div>
+
+            <div class="ray ray-one"></div>
+            <div class="ray ray-two"></div>
+            <div class="ray ray-three"></div>
+
+            <div class="heat-particles" id="heatParticles">
+              <span>♨️</span>
+              <span>♨️</span>
+              <span>♨️</span>
+            </div>
+
+            <div class="earth-object" id="earthObject">
+              🌍
+            </div>
+
+            <div class="atmosphere-label">
+              LAPISAN ATMOSFER
+            </div>
+          </div>
+
+          <div class="visual-legend">
+            <span><i class="legend-sun"></i Radiasi matahari</span>
+            <span><i class="legend-heat"></i Energi panas</span>
+          </div>
+        </div>
+
+        <!-- PANEL KONTROL -->
+        <div class="sim-control">
+
+          <div class="control-header">
+            <span>🎛️</span>
+            <h3>Panel Pengaturan</h3>
+          </div>
+
+          <label for="gasLevel">
+            Konsentrasi Gas Rumah Kaca
+          </label>
+
+          <div class="range-value">
+            <strong id="gasValue">30%</strong>
+            <span id="gasStatus">Rendah</span>
+          </div>
+
+          <input
+            type="range"
+            id="gasLevel"
+            min="0"
+            max="100"
+            value="30"
+          >
+
+          <div class="range-labels">
+            <span>Rendah</span>
+            <span>Sedang</span>
+            <span>Tinggi</span>
+          </div>
+
+          <div class="temperature-box">
+            <span>🌡️</span>
+            <div>
+              <small>Indeks suhu ilustratif</small>
+              <h2 id="temperatureValue">22°C</h2>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <h4 id="levelText">Kondisi atmosfer relatif rendah</h4>
+            <p id="resultText">
+              Dalam ilustrasi ini, lebih sedikit energi panas
+              yang diserap dan dipancarkan kembali oleh gas
+              rumah kaca.
+            </p>
+          </div>
+
+          <button class="btn btn-primary reset-btn" id="resetButton" type="button">
+            ↻ Reset Simulasi
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- PENJELASAN -->
+      <div class="explanation-card">
+        <span>💡</span>
+        <div>
+          <h3>Mengapa Suhu Bisa Berubah?</h3>
+          <p id="explanation">
+            Gas rumah kaca menyerap dan memancarkan kembali
+            radiasi inframerah. Semakin tinggi konsentrasinya
+            dalam ilustrasi ini, semakin besar penguatan efek
+            rumah kaca.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TANTANGAN -->
+    <section class="experiment-section">
+      <div class="section-heading">
+        <span class="section-label">TANTANGAN EKSPERIMEN</span>
+        <h2>Coba Amati Perubahannya!</h2>
+        <p>Gunakan simulasi di atas untuk menjawab pertanyaan berikut.</p>
+      </div>
+
+      <div class="experiment-card">
+        <div class="experiment-icon">🧪</div>
+        <h3>Apa yang Terjadi Jika Gas Rumah Kaca Meningkat?</h3>
+        <p>
+          Geser slider dari tingkat rendah ke tingkat tinggi.
+          Amati perubahan indeks suhu dan visualisasi bumi.
+        </p>
+        <div class="experiment-tip">
+          <strong>Petunjuk:</strong>
+          Bandingkan kondisi pada 20%, 50%, dan 90%.
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-cta">
+      <span>🧠</span>
+      <h2>Sudah Selesai Bereksperimen?</h2>
+      <p>
+        Sekarang, lanjutkan perjalananmu dengan mengenali
+        fakta dan dampak pemanasan global.
+      </p>
+      <a href="eksplorasi.html" class="btn btn-primary">
+        Lanjut Eksplorasi →
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <h3>🌍 EARTH LEARNING</h3>
+    <p>Media Pembelajaran Pemanasan Global dan Efek Rumah Kaca</p>
+    <p class="footer-small">Belajar Hari Ini, Selamatkan Bumi Esok Hari.</p>
+  </footer>
+
+</body>
+</html>

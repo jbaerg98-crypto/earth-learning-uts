@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis - Earth Learning</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">🌍 EARTH LEARNING</a>
+
+    <div class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="materi.html">Materi</a>
+      <a href="simulasi.html">Simulasi</a>
+      <a href="eksplorasi.html">Eksplorasi</a>
+      <a href="kuis.html" class="active">Kuis</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="page-hero quiz-hero">
+    <span class="eyebrow">UJI PEMAHAMANMU 🧠</span>
+    <h1>Seberapa Kenal Kamu dengan Bumi?</h1>
+    <p>
+      Jawab pertanyaan berikut untuk menguji pemahamanmu
+      tentang pemanasan global dan efek rumah kaca.
+    </p>
+  </header>
+
+  <!-- QUIZ -->
+  <section class="content-section quiz-section">
+
+    <div class="quiz-container" id="quizContainer">
+
+      <div class="quiz-top">
+        <span id="questionNumber">Pertanyaan 1 dari 10</span>
+        <span id="scorePreview">Skor: 0</span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="question-box">
+        <span class="question-label">PERTANYAAN</span>
+        <h2 id="questionText">Memuat pertanyaan...</h2>
+      </div>
+
+      <div class="answer-list" id="answerList"></div>
+
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+
+      <button class="btn-primary quiz-next" id="nextButton" disabled>
+        Pertanyaan Berikutnya →
+      </button>
+
+    </div>
+
+    <!-- HASIL KUIS -->
+    <div class="quiz-container quiz-result" id="resultContainer" hidden>
+
+      <div class="result-emoji" id="resultEmoji">🏆</div>
+
+      <span class="eyebrow">HASIL KUIS</span>
+      <h2 id="resultTitle">Kuis Selesai!</h2>
+
+      <div class="final-score">
+        <span>Skor Kamu</span>
+        <strong id="finalScore">0</strong>
+        <small>dari 100 poin</small>
+      </div>
+
+      <p id="resultMessage"></p>
+
+      <button class="btn-primary" id="restartButton">
+        Ulangi Kuis ↻
+      </button>
+
+      <a href="index.html" class="btn-secondary">
+        Kembali ke Beranda
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h3>🌍 EARTH LEARNING</h3>
+    <p>Belajar hari ini untuk menjaga Bumi esok hari.</p>
+    <p>© 2026 Earth Learning</p>
+  </footer>
+
+</body>
+</html>
